@@ -14,5 +14,22 @@
 <guid isPermaLink="false">logic-daily-2026-09-24-v1</guid>
 <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/logic-daily-2026-09-24.mp3" length="10000" type="audio/mpeg"/>
 </item>
+<item>
+  <title>Logic Daily｜#002 AI 开始学会行动</title>
+  <description><![CDATA[
+AI 正从“会回答”走向“会行动”。本期聚焦 AI Agent、Physical AI、英语学习工作流、AI 音乐版权，以及 AI 交易背后的风险与机会。
+  ]]></description>
+  <pubDate>Thu, 24 Sep 2026 00:00:00 +0800</pubDate>
+  <guid isPermaLink="false">logic-daily-2026-09-24-v2</guid>
+  <enclosure
+    url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/logic-daily-2026-09-24-v2.mp3"
+    length="10000"
+    type="audio/mpeg"/>
+  <category>AI</category>
+  <category>English</category>
+  <category>Learning</category>
+  <category>Music</category>
+  <category>Finance</category>
+</item>
 </channel>
 </rss>
