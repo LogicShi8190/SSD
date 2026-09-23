@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.apple.com/dtds/podcast-1.0.dtd">
+<channel>
+<title>Logic Daily｜你的个人学习电台</title>
+<link>https://github.com/LogicShi8190/SSD</link>
+<language>zh-CN</language>
+<description>把输入变成学习，把学习变成输出。英语、考研、AI、音乐与理财的个人学习信息源。</description>
+<itunes:author>Logic Daily</itunes:author>
+<itunes:explicit>false</itunes:explicit>
+<item>
+<title>Logic Daily｜第一版</title>
+<description>英语、考研、人工智能、音乐与理财：第一版个人学习电台。</description>
+<pubDate>Thu, 24 Sep 2026 00:00:00 +0800</pubDate>
+<guid isPermaLink="false">logic-daily-2026-09-24-v1</guid>
+<enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/logic-daily-2026-09-24.mp3" length="10000" type="audio/mpeg"/>
+</item>
+</channel>
+</rss>
