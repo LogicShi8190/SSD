@@ -18,33 +18,40 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Install audio tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y ffmpeg python3-pip
+          sudo apt-get install -y ffmpeg
           python3 -m pip install --user edge-tts
+
       - name: Generate audio
         shell: bash
         run: |
+          set -euo pipefail
           mkdir -p audio
           for f in episodes/*.txt; do
             base=$(basename "$f" .txt)
-            python3 -m edge_tts --voice zh-CN-XiaoxiaoNeural --rate=-5% --text "$(cat "$f")" --write-media "audio/${base}.mp3"
+            python3 -m edge_tts --voice zh-CN-XiaoxiaoNeural --rate=-5% --file "$f" --write-media "audio/${base}.mp3"
             ffmpeg -y -i "audio/${base}.mp3" -ac 1 -ar 44100 -b:a 96k "audio/${base}.tmp.mp3"
             mv "audio/${base}.tmp.mp3" "audio/${base}.mp3"
           done
+
       - name: Update RSS lengths
         run: |
           python3 - <<'PY'
-          import os,re
-          p='feed.xml'
-          s=open(p,encoding='utf-8').read()
+          import os, re
+          p = 'feed.xml'
+          s = open(p, encoding='utf-8').read()
           for fn in os.listdir('audio'):
-              if not fn.endswith('.mp3'): continue
-              size=os.path.getsize('audio/'+fn)
-              s=re.sub(r'(<enclosure[^>]*url="[^"]*/'+re.escape(fn)+r'"[^>]*length=")\d+(")', r'\g<1>'+str(size)+r'\2', s)
-          open(p,'w',encoding='utf-8').write(s)
+              if not fn.endswith('.mp3'):
+                  continue
+              size = os.path.getsize(os.path.join('audio', fn))
+              pattern = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
+              s = re.sub(pattern, r'\g<1>' + str(size) + r'\2', s)
+          open(p, 'w', encoding='utf-8').write(s)
           PY
+
       - name: Commit audio and RSS
         run: |
           git config user.name "Logic Daily Bot"
