@@ -20,5 +20,27 @@
       <itunes:episode>1</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
+  <item>
+    <title>升维</title>
+    <description>EP002：从《升维》理解动态博弈与钟摆效应，以及不确定时代的六条决策框架。</description>
+    <pubDate>Mon, 28 Sep 2026 16:40:00 +0800</pubDate>
+    <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/002.mp3" length="0" type="audio/mpeg"/>
+    <guid isPermaLink="false">logic-book-002-shengwei</guid>
+    <itunes:author>Logic</itunes:author>
+    <itunes:duration>20:00</itunes:duration>
+    <itunes:episode>2</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
+  <item>
+    <title>AI 越能行动，人越要会判断</title>
+    <description>EP004：AI Agent 从演示走向生产——权限边界、学习反馈、创作系统与投资分层。</description>
+    <pubDate>Mon, 28 Sep 2026 16:20:00 +0800</pubDate>
+    <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/004.mp3" length="0" type="audio/mpeg"/>
+    <guid isPermaLink="false">logic-daily-004-ai-judgment</guid>
+    <itunes:author>Logic</itunes:author>
+    <itunes:duration>20:00</itunes:duration>
+    <itunes:episode>4</itunes:episode>
+    <itunes:episodeType>full</itunes:episodeType>
+  </item>
   </channel>
 </rss>
