@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: '0 16 * * *' # 北京时间每天 00:00
 
+concurrency:
+  group: logic-daily-audio
+  cancel-in-progress: false
+
+
 permissions:
   contents: write
 
