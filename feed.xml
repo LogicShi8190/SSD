@@ -8,6 +8,7 @@
     <description>每天一本书：用一本书补充认知、决策、学习、科技、商业、人文与艺术。</description>
     <itunes:author>Logic</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
     <item>
       <title>非理性繁荣</title>
       <description>EP001：从《非理性繁荣》理解资产泡沫、社会传染、价格与价值的区别，以及如何建立自己的投资检查框架。</description>
