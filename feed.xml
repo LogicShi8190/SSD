@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
-<channel>
-<title>每天一本书｜Logic</title>
-<link>https://github.com/LogicShi8190/SSD</link>
-<language>zh-CN</language>
-<description>每天一本书：用一本书补充认知、决策、学习、科技、商业、人文与艺术。</description>
-<itunes:author>Logic</itunes:author>
-<itunes:explicit>false</itunes:explicit>
-</channel>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>每天一本书｜Logic</title>
+    <link>https://github.com/LogicShi8190/SSD</link>
+    <language>zh-CN</language>
+    <description>每天一本书：用一本书补充认知、决策、学习、科技、商业、人文与艺术。</description>
+    <itunes:author>Logic</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <title>非理性繁荣</title>
+      <description>EP001：从《非理性繁荣》理解资产泡沫、社会传染、价格与价值的区别，以及如何建立自己的投资检查框架。</description>
+      <pubDate>Mon, 28 Sep 2026 15:15:00 +0800</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/001.mp3" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-001-irrational-exuberance</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>09:02</itunes:duration>
+      <itunes:episode>1</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
 </rss>
