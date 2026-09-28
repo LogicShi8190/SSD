@@ -37,18 +37,30 @@ jobs:
             mv "audio/${base}.tmp.mp3" "audio/${base}.mp3"
           done
 
-      - name: Update RSS lengths
+      - name: Update RSS lengths and durations
         run: |
           python3 - <<'PY'
-          import os, re
+          import os, re, subprocess
           p = 'feed.xml'
           s = open(p, encoding='utf-8').read()
           for fn in os.listdir('audio'):
               if not fn.endswith('.mp3'):
                   continue
-              size = os.path.getsize(os.path.join('audio', fn))
-              pattern = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
-              s = re.sub(pattern, r'\g<1>' + str(size) + r'\2', s)
+              fp = os.path.join('audio', fn)
+              size = os.path.getsize(fp)
+              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
+              s = re.sub(lpat, r'\g<1>' + str(size) + r'\g<2>', s)
+              r = subprocess.run(['ffprobe', '-v', 'error', '-show_entries',
+                                  'format=duration', '-of', 'csv=p=0', fp],
+                                 capture_output=True, text=True)
+              if r.returncode == 0 and r.stdout.strip():
+                  total = int(float(r.stdout.strip()))
+                  dur = f"{total//60:02d}:{total%60:02d}"
+                  dpat = (r'(<item>(?:(?!</item>).)*?<enclosure[^>]*url="[^"]*/'
+                          + re.escape(fn) +
+                          r'"[^>]*>(?:(?!</item>).)*?<itunes:duration>)[^<]*'
+                          r'(</itunes:duration>)')
+                  s = re.sub(dpat, r'\g<1>' + dur + r'\g<2>', s, flags=re.DOTALL)
           open(p, 'w', encoding='utf-8').write(s)
           PY
 
