@@ -8,19 +8,77 @@
     <itunes:author>Logic</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
-    \g<1>20:05\g<2>
+    <item>
+      <title>EP001｜《非理性繁荣》</title>
+      <description>#金融 #投资 #经济｜关键词：资产泡沫、社会传染、价格、价值、投资框架
+
+
+【简介】
+从《非理性繁荣》出发，理解资产价格为何会偏离基本面，以及情绪、叙事与社会传染如何参与市场定价。把书中的观察带回现实，重新审视风险、周期与自己的投资判断。
+
+
+【一句话】
+价格会波动，判断需要留下自己的尺度。</description>
+      <pubDate>Mon, 28 Sep 2026 15:15:00 +0800</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/001.mp3" length="14471986" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-001-irrational-exuberance</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>20:05</itunes:duration>
       <itunes:episode>1</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-    \g<1>19:32\g<2>
+    <item>
+      <title>EP002｜《升维》</title>
+      <description>#决策 #商业 #思维｜关键词：动态博弈、钟摆效应、不确定性、决策、框架
+
+
+【简介】
+从《升维》切入动态博弈与钟摆效应，讨论人在复杂、不确定的环境里如何调整观察尺度与决策方式。不是寻找一个永远正确的答案，而是建立能够持续修正的判断框架。
+
+
+【一句话】
+真正重要的不是看得更远，而是不断改变看世界的尺度。</description>
+      <pubDate>Mon, 28 Sep 2026 16:40:00 +0800</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/002.mp3" length="14065416" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-002-shengwei</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>19:32</itunes:duration>
       <itunes:episode>2</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-    \g<1>22:25\g<2>
+    <item>
+      <title>EP003｜《认知天性》</title>
+      <description>#认知 #学习 #心理学｜关键词：检索练习、间隔重复、流畅感幻觉、记忆、学习方法
+
+
+【简介】
+从《认知天性》出发，拆解"怎么学才记得牢"：流畅感幻觉为什么骗人，检索练习和间隔重复为什么有效。把认知科学的实验结论带回考研和日常学习，聊聊怎么把每天三小时花在刀刃上。
+
+
+【一句话】
+别用"我看了几遍"衡量学习，用"我能默写出多少"衡量。</description>
+      <pubDate>Tue, 29 Sep 2026 08:40:00 +0800</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/003.mp3" length="17511071" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-003-make-it-stick</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>24:19</itunes:duration>
       <itunes:episode>3</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-    \g<1>09:40\g<2>
+    <item>
+      <title>EP004｜《高性价比人生指南》</title>
+      <description>#健康 #生活 #省钱｜关键词：性价比、循证、急救、省钱、法律红线
+
+【简介】
+插队一期，不聊书，聊一个 GitHub 上很火的开源项目：按性价比排序的循证生活指南。从卒中识别的时间窗口、野生蘑菇的土办法，到彩票、个税汇算、法律红线，聊聊怎么把"花什么、换回什么"这笔账算清楚。
+
+【一句话】
+优先做那些几乎不花成本、收益巨大的事。</description>
+      <pubDate>Wed, 30 Sep 2026 08:00:00 +0800</pubDate>
+      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/004.mp3" length="6973030" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-004-howtolivebetter</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>09:40</itunes:duration>
       <itunes:episode>4</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
