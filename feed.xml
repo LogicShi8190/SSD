@@ -7,6 +7,6 @@
     <description>循书而行，向知而问。每天从一本书出发，寻找理解世界的另一条路径。</description>
     <itunes:author>Logic</itunes:author>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg?v=20260929-3"/>
+    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
   </channel>
 </rss>
