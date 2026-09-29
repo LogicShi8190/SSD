@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>按籍索知</title>
+    <title>每天一本书｜Logic</title>
     <link>https://github.com/LogicShi8190/SSD</link>
     <language>zh-CN</language>
     <description>循书而行，向知而问。每天从一本书出发，寻找理解世界的另一条路径。</description>
     <itunes:author>Logic</itunes:author>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
+    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg?v=20260929-2"/>
     <item>
       <title>EP001｜《非理性繁荣》</title>
       <description>#金融 #投资 #经济｜关键词：资产泡沫、社会传染、价格、价值、投资框架
