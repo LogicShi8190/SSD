@@ -7,7 +7,7 @@ on:
       - 'feed.xml'
   workflow_dispatch:
   schedule:
-    - cron: '0 16 * * *' # 北京时间每天 00:00
+    - cron: '0 16 * * *'	# 北京时间每天 00:00
 
 concurrency:
   group: logic-daily-audio
@@ -34,19 +34,24 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p audio tmp_tts
+          ZIMO_VOICE="zh-CN-YunxiNeural"
+          XIAOWEN_VOICE="zh-CN-XiaoxiaoNeural"
+          NARR_VOICE="zh-CN-XiaoxiaoNeural"
           for f in episodes/*.txt; do
             base=$(basename "$f" .txt)
             rm -f tmp_tts/"$base"_*.mp3 tmp_tts/"$base"_list.txt audio/"$base".mp3
+            rm -f tmp_tts/"$base"_has_speakers
             i=0
             while IFS= read -r line || [ -n "$line" ]; do
-              case "$line" in
-                子墨:*)
-                  voice="zh-CN-YunxiNeural"
-                  text="${line#子墨:}"
+              t="${line#"${line%%[![:space:]]*}"}"
+              case "$t" in
+                子墨:*|子墨：*)
+                  voice="$ZIMO_VOICE"
+                  text="${t#子墨:}"; text="${text#子墨：}"
                   ;;
-                小文:*)
-                  voice="zh-CN-XiaoxiaoNeural"
-                  text="${line#小文:}"
+                小文:*|小文：*)
+                  voice="$XIAOWEN_VOICE"
+                  text="${t#小文:}"; text="${text#小文：}"
                   ;;
                 *)
                   continue
@@ -54,14 +59,19 @@ jobs:
               esac
               text="${text# }"
               [ -z "$text" ] && continue
+              touch tmp_tts/"$base"_has_speakers
               printf '%s\n' "$text" > tmp_tts/"$base"_$i.txt
               python3 -m edge_tts --voice "$voice" --rate=-5% --file tmp_tts/"$base"_$i.txt --write-media tmp_tts/"$base"_$i.mp3
               printf "file '%s/%s_%s.mp3'\n" "$(pwd)/tmp_tts" "$base" "$i" >> tmp_tts/"$base"_list.txt
               i=$((i+1))
             done < "$f"
-
-            [ "$i" -gt 0 ] || { echo "No speaker lines found in $f"; exit 1; }
-            ffmpeg -y -f concat -safe 0 -i tmp_tts/"$base"_list.txt -ac 1 -ar 44100 -b:a 96k audio/"$base".mp3
+            if [ -f tmp_tts/"$base"_has_speakers ]; then
+              ffmpeg -y -f concat -safe 0 -i tmp_tts/"$base"_list.txt -ac 1 -ar 44100 -b:a 96k audio/"$base".mp3
+            else
+              python3 -m edge_tts --voice "$NARR_VOICE" --rate=-5% --file "$f" --write-media tmp_tts/"$base"_full.mp3
+              ffmpeg -y -i tmp_tts/"$base"_full.mp3 -ac 1 -ar 44100 -b:a 96k audio/"$base".mp3
+            fi
+            rm -f tmp_tts/"$base"_has_speakers
           done
 
       - name: Update RSS lengths and durations
@@ -75,8 +85,8 @@ jobs:
                   continue
               fp = os.path.join('audio', fn)
               size = os.path.getsize(fp)
-              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
-              s = re.sub(lpat, r'\g<1>' + str(size) + r'\g<2>', s)
+              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\\d+(")'
+              s = re.sub(lpat, r'\\g<1>' + str(size) + r'\\g<2>', s)
               r = subprocess.run(['ffprobe', '-v', 'error', '-show_entries',
                                   'format=duration', '-of', 'csv=p=0', fp],
                                  capture_output=True, text=True)
@@ -86,7 +96,7 @@ jobs:
                   dpat = (r'(<item>(?:(?!</item>).)*?<enclosure[^>]*url="[^"]*/'
                           + re.escape(fn) +
                           r'"[^>]*>.*?<itunes:duration>)[^<]*(</itunes:duration>)')
-                  s = re.sub(dpat, r'\g<1>' + dur + r'\g<2>', s, flags=re.DOTALL)
+                  s = re.sub(dpat, r'\\g<1>' + dur + r'\\g<2>', s, flags=re.DOTALL)
           open(p, 'w', encoding='utf-8').write(s)
           PY
 
