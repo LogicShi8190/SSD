@@ -85,7 +85,7 @@ jobs:
                   continue
               fp = os.path.join('audio', fn)
               size = os.path.getsize(fp)
-              lpat = r'(<enclosure[^>]url="[^"]*/' + re.escape(fn) + r'"[^>]*length=\d+(")'
+              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
               s = re.sub(lpat, r'\g<1>' + str(size) + r'\g<2>', s)
               r = subprocess.run(['ffprobe', '-v', 'error', '-show_entries',
                                   'format=duration', '-of', 'csv=p=0', fp],
