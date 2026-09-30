@@ -85,7 +85,7 @@ jobs:
                   continue
               fp = os.path.join('audio', fn)
               size = os.path.getsize(fp)
-              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'"[^>]*length=")\d+(")'
+              lpat = r'(<enclosure[^>]*url="[^"]*/' + re.escape(fn) + r'(\?[^"]*)?"[^>]*length=")\d+(")'
               s = re.sub(lpat, r'\g<1>' + str(size) + r'\g<2>', s)
               r = subprocess.run(['ffprobe', '-v', 'error', '-show_entries',
                                   'format=duration', '-of', 'csv=p=0', fp],
@@ -95,7 +95,7 @@ jobs:
                   dur = f"{total//60:02d}:{total%60:02d}"
                   dpat = (r'(<item>(?:(?!</item>).)*?<enclosure[^>]*url="[^"]*/'
                           + re.escape(fn) +
-                          r'"[^>]*>.*?<itunes:duration>)[^<]*(</itunes:duration>)')
+                          r'(\?[^"]*)?"[^>]*>.*?<itunes:duration>)[^<]*(</itunes:duration>)')
                   s = re.sub(dpat, r'\g<1>' + dur + r'\g<2>', s, flags=re.DOTALL)
           open(p, 'w', encoding='utf-8').write(s)
           PY
