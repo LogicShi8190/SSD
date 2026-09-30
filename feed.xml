@@ -4,9 +4,12 @@
     <title>按籍索知</title>
     <link>https://github.com/LogicShi8190/SSD</link>
     <language>zh-CN</language>
-    <description>循书而行，向知而问。每天从一本书出发，寻找理解世界的另一条路径。</description>
+    <description>循书而行，向知而问。每天从一本书出发，寻找理解世界的另一条路径。【制作说明】本节目讲稿由 AI 辅助创作，节目声音为 AI 合成。</description>
     <itunes:author>Logic</itunes:author>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+    </itunes:category>
     <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
     <item>
       <title>EP001｜《非理性繁荣》</title>
