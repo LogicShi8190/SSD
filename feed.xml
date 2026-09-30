@@ -14,7 +14,7 @@
     <itunes:category text="Education">
       <itunes:category text="Self-Improvement"/>
     </itunes:category>
-    <itunes:image href="https://raw.githubusercontent.com/LogicShi8190/SSD/main/cover.jpg"/>
+    <itunes:image href="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/cover.jpg"/>
     <item>
       <title>EP001｜《非理性繁荣》</title>
       <description>#金融 #投资 #经济｜关键词：资产泡沫、社会传染、价格、价值、投资框架
@@ -27,7 +27,7 @@
 【一句话】
 价格会波动，判断需要留下自己的尺度。</description>
       <pubDate>Mon, 28 Sep 2026 15:15:00 +0800</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/001.mp3" length="14471986" type="audio/mpeg"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/001.mp3" length="14471986" type="audio/mpeg"/>
       <guid isPermaLink="false">logic-book-001-irrational-exuberance</guid>
       <itunes:author>Logic</itunes:author>
       <itunes:duration>20:05</itunes:duration>
@@ -46,7 +46,7 @@
 【一句话】
 真正重要的不是看得更远，而是不断改变看世界的尺度。</description>
       <pubDate>Mon, 28 Sep 2026 16:40:00 +0800</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/002.mp3" length="14065416" type="audio/mpeg"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/002.mp3" length="14065416" type="audio/mpeg"/>
       <guid isPermaLink="false">logic-book-002-shengwei</guid>
       <itunes:author>Logic</itunes:author>
       <itunes:duration>19:32</itunes:duration>
@@ -65,7 +65,7 @@
 【一句话】
 别用"我看了几遍"衡量学习，用"我能默写出多少"衡量。</description>
       <pubDate>Tue, 29 Sep 2026 08:40:00 +0800</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/003.mp3" length="16148734" type="audio/mpeg"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/003.mp3" length="16148734" type="audio/mpeg"/>
       <guid isPermaLink="false">logic-book-003-make-it-stick</guid>
       <itunes:author>Logic</itunes:author>
       <itunes:duration>22:25</itunes:duration>
@@ -82,7 +82,7 @@
 【一句话】
 优先做那些几乎不花成本、收益巨大的事。</description>
       <pubDate>Wed, 30 Sep 2026 08:00:00 +0800</pubDate>
-      <enclosure url="https://raw.githubusercontent.com/LogicShi8190/SSD/main/audio/004.mp3" length="6970350" type="audio/mpeg"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/004.mp3" length="6970350" type="audio/mpeg"/>
       <guid isPermaLink="false">logic-book-004-howtolivebetter</guid>
       <itunes:author>Logic</itunes:author>
       <itunes:duration>09:40</itunes:duration>
