@@ -71,6 +71,7 @@
       <guid isPermaLink="false">logic-book-003-make-it-stick</guid>
       <itunes:author>Logic</itunes:author>
       <itunes:duration>22:25</itunes:duration>
+      
       <itunes:episode>3</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
@@ -89,6 +90,23 @@
       <itunes:author>Logic</itunes:author>
       <itunes:duration>09:40</itunes:duration>
       <itunes:episode>4</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+      <item>
+      <title>EP005｜《金融之王》</title>
+      <description>#金融 #历史 #投资｜关键词：大萧条、金本位、中央银行、货币信心
+
+【简介】
+普利策奖作品，讲四个中央银行行长如何一步步把世界推进大萧条。从英国为面子硬撑金本位，到法国因恐惧疯狂囤黄金，再到美联储关键人物去世后的误判加息，原来大萧条不是天灾，是人祸。最后聊聊，这对今天做投资有什么用。
+
+【一句话】
+货币的本质是信心，规则的本质是看环境；看懂决策者，比预测市场有用。</description>
+      <pubDate>Thu, 01 Oct 2026 08:00:00 +0800</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/005.mp3" length="0" type="audio/mpeg"/>
+      <guid isPermaLink="false">logic-book-005-lords-of-finance</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>20:00</itunes:duration>
+      <itunes:episode>5</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
   </channel>
