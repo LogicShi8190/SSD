@@ -155,20 +155,20 @@
       <itunes:episode>7</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-    <item>
+<item>
       <title>EP008｜《芯片战争》</title>
       <description>#科技 #商业 #地缘｜关键词：芯片、半导体、地缘政治
 
 【简介】
-克里斯·米勒的历史叙事名作，讲世界最关键技术七十年的争夺史。从硅谷车库里的集成电路，到台积电的晶圆厂；从苏联的量产之困，到日本存储芯片反超美国；从"小院高墙"的出口管制，到技术脱钩的代价。芯片是新石油，谁卡住算力，谁就卡住未来。
+克里斯·米勒的历史叙事名作，讲世界最关键技术七十年的争夺史。从硅谷车库里的集成电路，到台积电的晶圆厂；从苏联的量产之困，到日本存储芯片反超美国；从小院高墙的出口管制，到技术脱钩的代价。芯片是新石油，谁卡住算力，谁就卡住未来。
 
 【一句话】
 技术领先不等于产业胜利；真正的护城河，是把技术稳定交付给世界的能力。</description>
       <pubDate>Thu, 01 Oct 2026 18:00:00 +0800</pubDate>
-      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/008.mp3" type="audio/mpeg"/>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/008.mp3" type="audio/mpeg" length="0"/>
       <guid isPermaLink="false">logic-book-008-chip-war</guid>
       <itunes:author>Logic</itunes:author>
-      <itunes:duration>22:25
+      <itunes:duration>20:00</itunes:duration>
       <itunes:episode>8</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
