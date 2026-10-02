@@ -119,16 +119,24 @@ jobs:
           git add audio/ feed.xml
           git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
           git commit -m "Publish Logic Daily audio"
-          # A push landing mid-run must not kill the job: retry the rebase
-          # a few times, aborting cleanly between attempts.
+          # A push landing mid-run must not kill the job: retry the rebase.
+          # Two runs rendering the same episode collide on audio/*.mp3 as a
+          # binary add/add (edge-tts bytes are not deterministic across runs).
+          # Auto-resolve those by keeping this run's freshly generated files,
+          # which match the backfilled feed.xml values; any other conflict
+          # still aborts loudly.
           ok=0
           for i in 1 2 3; do
             git fetch origin main
             git rebase origin/main && { ok=1; break; }
-            echo "rebase conflict, aborting and retrying ($i/3)"
-            git rebase --abort
+            echo "rebase conflict, attempting mp3-only auto-resolve ($i/3)"
+            conflicted=$(git diff --name-only --diff-filter=U || true)
+            echo "$conflicted"
+            nonmp3=$(echo "$conflicted" | grep -v '^audio/.*\.mp3$' || true)
+            { [ -n "$conflicted" ] && [ -z "$nonmp3" ]; } || { echo "non-mp3 conflict, aborting"; git rebase --abort; break; }
+            git checkout --theirs -- $conflicted && git add -- $conflicted && git -c core.editor=true rebase --continue && { ok=1; break; }
+            echo "auto-resolve failed, aborting"; git rebase --abort
             sleep 15
           done
           [ "$ok" = "1" ] || { echo "rebase still conflicted after 3 attempts"; exit 1; }
           git push
-          
