@@ -185,5 +185,16 @@
       <itunes:episode>10</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-  </channel>
+  <item>
+      <title>EP011｜《规训与惩罚》</title>
+      <description>福柯《规训与惩罚》解读：惩罚没有变温柔，只是学会了更便宜、更彻底的控制。从作息表、全景敞视监狱到自我规训，看清现代生活的隐形牢房。</description>
+      <pubDate>Sun, 04 Oct 2026 01:00:00 +0800</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/011.mp3" type="audio/mpeg" length="0"/>
+      <guid isPermaLink="false">logic-book-011-discipline-punish</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>20:00</itunes:duration>
+      <itunes:episode>11</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+</channel>
 </rss>
