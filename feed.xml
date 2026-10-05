@@ -231,5 +231,20 @@
       <itunes:episode>12</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
-</channel>
+<item>
+      <title>EP013｜《当心》</title>
+      <description>#注意力经济 #算法｜关键词：注意力提取、信息节食、观众劫持
+
+【简介】美国政治评论员大卫帕克曼的新作，上市即登纽约时报畅销榜。一个在视频平台打拼十几年的创作者，用亲身经历拆解隐形的注意力提取系统：平台卖的不是内容，而是对你行为的预测；争议是硬通货，温和理性要交理性税；观众用点赞反向劫持创作者，把博主一步步训练得更极端；标题封面的黑暗科学背后是上万次点击测试；最终用户成了被开采的产品，而人工智能正让连创作者都不再必要。书的结尾给出一套信息节食实战框架。
+
+【一句话】你不是用户，你是被开采的矿；看清这只手，是夺回注意力的第一步。</description>
+      <pubDate>Tue, 06 Oct 2026 01:00:00 +0800</pubDate>
+      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/013.mp3" type="audio/mpeg" length="0"/>
+      <guid isPermaLink="false">logic-book-013-pay-attention</guid>
+      <itunes:author>Logic</itunes:author>
+      <itunes:duration>20:00</itunes:duration>
+      <itunes:episode>13</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+  </channel>
 </rss>
