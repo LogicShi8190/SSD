@@ -246,5 +246,20 @@
       <itunes:episode>13</itunes:episode>
       <itunes:episodeType>full</itunes:episodeType>
     </item>
+  <item>
+        <title>EP014｜《随机漫步的傻瓜》</title>
+        <description>#投资心智 #随机性｜关键词：运气、幸存者偏差、不对称风险
+险
+  纳西姆尼古拉斯塔勒布的成名作，《黑天鹅》的前传。华尔街交易员出身的作者，用牙医与交易员的对比、打字机前的猴子、感恩节前夜的火鸡、笼中鸽子的迷信实验，层层拆穿运气的伪装：成功可能是随机的，赢家故事全是幸存者偏差，稳赚小钱的局往往藏着大亏的陷阱，专家的预测和火鸡的归纳法一样不靠谱。最后给出一套活在随机世界里的实战方法：少看账户，拉长周期，让时间站在你这边。
+。
+  别做被随机愚弄的傻瓜，要做看懂随机的明白人。</description>
+        <pubDate>Wed, 07 Oct 2026 01:00:00 +0800</pubDate>
+        <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/014.mp3" type="audio/mpeg" length="0"/>
+        <guid isPermaLink="false">logic-book-014-fooled-by-randomness</guid>
+        <itunes:author>Logic</itunes:author>
+        <itunes:duration>20:00</itunes:duration>
+        <itunes:episode>14</itunesepisode>
+        <itunes:episodeType>full</itunes:episodeType>
+        </item>
   </channel>
 </rss>
