@@ -267,5 +267,5 @@
         <itunes:episode>14</itunes:episode>
         <itunes:episodeType>full</itunes:episodeType>
         </item>
-  </channel>
+  <item>&#10;      <title>EP015｜《亲密关系》</title>&#10;      <description>#亲密关系 #心理学｜关键词：亲密关系、投射、内省&#10;&#10;【简介】为什么相爱的人总在互相伤害？克里斯多福·孟在这本华语心理学经典里画出一张地图：亲密关系的四个阶段，绚丽、幻灭、内省、启示。你以为在跟伴侣吵架，其实抢的是一把想象中的钥匙；你伴侣最让你抓狂的地方，往往是你内在功课的考题。书中那个娶了翻版母亲的男人，和作者自己流着泪的平静分手，都在讲同一件事。&#10;&#10;【一句话】伴侣是你最重要的镜子，照见的从来不是他，是你。</description>&#10;      <pubDate>Thu, 08 Oct 2026 01:00:00 +0800</pubDate>&#10;      <enclosure url="https://cdn.jsdelivr.net/gh/LogicShi8190/SSD@main/audio/015.mp3" type="audio/mpeg" length="0"/>&#10;      <guid isPermaLink="false">logic-book-015-qin-mi-guan-xi</guid>&#10;      <itunes:author>Logic</itunes:author>&#10;      <itunes:duration>20:00</itunes:duration>&#10;      <itunes:episode>15</itunes:episode>&#10;      <itunes:episodeType>full</itunes:episodeType>&#10;    </item>&#10;</channel>
 </rss>
