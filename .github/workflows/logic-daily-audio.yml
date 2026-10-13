@@ -28,7 +28,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-        python3 -m pip install --user edge-tts
+          python3 -m pip install --user edge-tts
 
       - name: Patch edge-tts endpoint (2026-10-13)
         run: |
@@ -57,7 +57,7 @@ jobs:
           PY
 
       - name: Generate audio
-      shell: bash
+        shell: bash
         run: |
           set -euo pipefail
           mkdir -p audio tmp_tts
