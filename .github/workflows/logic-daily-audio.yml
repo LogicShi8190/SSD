@@ -65,7 +65,7 @@ jobs:
           XIAOWEN_VOICE="zh-CN-XiaoxiaoNeural"
           NARR_VOICE="zh-CN-XiaoxiaoNeural"
           for f in episodes/*.txt; do
-            base=$(basename "$f" .txt)
+            base=$(basename "$f" .txt); [ -s "audio/$base.mp3" ] && { echo "skip $base"; continue; }  # incremental: delete audio/NNN.mp3 to force remake
             rm -f tmp_tts/"$base"_*.mp3 tmp_tts/"$base"_list.txt audio/"$base".mp3
             rm -f tmp_tts/"$base"_has_speakers
             i=0
